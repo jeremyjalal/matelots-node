@@ -1,0 +1,68 @@
+{
+  "env": {
+    "es6": true,
+    "node": true,
+    "jest/globals": true
+  },
+  "extends": "eslint:recommended",
+  "plugins": [
+    "jest"
+  ],
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaVersion": 2017
+  },
+  "globals": {
+    "MissingRessourceError": true,
+    "MissingArgumentsError": true,
+    "UnprocessableEntityError": true,
+    "ConflictResourceError": true,
+    "ForbiddenResourceError": true
+  },
+  "rules": {
+    "indent": [
+      "error",
+      2
+    ],
+    "linebreak-style": [
+      "error",
+      "windows"
+    ],
+    "quotes": [
+      "error",
+      "single"
+    ],
+    "semi": [
+      "error",
+      "always"
+    ],
+    "eqeqeq": [
+      "error"
+    ],
+    "no-await-in-loop": [
+      "error"
+    ],
+    "no-console": [
+      "off"
+    ],
+    "global-require": [
+      "error"
+    ],
+    "no-path-concat": [
+      "error"
+    ],
+    "brace-style": [
+      "warn"
+    ],
+    "comma-dangle": [
+      "error",
+      "never"
+    ],
+    "comma-spacing": [
+      "error"
+    ],
+    "no-var": [
+      "error"
+    ]
+  }
+}

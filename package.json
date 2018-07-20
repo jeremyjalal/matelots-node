@@ -1,0 +1,53 @@
+{
+  "name": "webservices",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "author": "Allaoua Benchikh",
+  "scripts": {
+    "start": "node index.js",
+    "watch": "nodemon index.js",
+    "test": "jest"
+  },
+  "dependencies": {
+    "app-root-path": "^2.1.0",
+    "body-parser": "^1.18.2",
+    "boom": "^7.2.0",
+    "compression": "^1.7.2",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "helmet": "^3.12.0",
+    "influx": "^5.0.7",
+    "lodash": "^4.17.10",
+    "morgan": "^1.9.0",
+    "multer": "^1.3.0",
+    "mysql": "^2.15.0",
+    "winston": "^3.0.0",
+    "winston-daily-rotate-file": "^3.2.3"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-plugin-jest": "^21.18.0",
+    "jest": "^22.4.4",
+    "nodemon": "^1.17.5"
+  },
+  "jest": {
+    "verbose": true,
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "**/*.{js,jsx}",
+      "!**/node_modules/**",
+      "!**/vendor/**",
+      "!server/components/utils/mysql/**",
+      "!coverage/**"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 80,
+        "functions": 80,
+        "lines": 80,
+        "statements": -10
+      }
+    }
+  }
+}
