@@ -8,10 +8,4 @@ pipeline {
             }
         }
     }
-    post {
-        always {
-            echo 'Cleaning workspace...'
-            deleteDir() /* clean up our workspace */
-        }
-    }
 }
