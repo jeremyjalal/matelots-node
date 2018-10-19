@@ -21,9 +21,6 @@ pipeline {
             when {
                 branch 'develop' 
             }
-            tools {
-                "org.jenkinsci.plugins.docker.commons.tools.DockerTool" "docker"
-            }
             steps {
                 echo "Develop here !"
                 // script {
