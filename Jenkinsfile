@@ -2,7 +2,9 @@ pipeline {
     agent { dockerfile true }
     stages {
         stage('Test') {
-            echo "I'm here !"   
+            steps {
+                echo "I'm here !"   
+            }
         }
     }
     post {
